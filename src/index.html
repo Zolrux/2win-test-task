@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2Win</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/adaptive.css" />
+</head>
+
+
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="header__body">
+    <div class="header__mobile-menu menu">
+      <button type="button" class="menu__icon _icon-menu"></button>
+      <nav class="menu__body">
+        <button class="menu__close _icon-close"></button>
+        <ul class="menu__list list-menu">
+          <li class="list-menu__item">
+            <a href="#" class="list-menu__link list-menu__link--active _icon-quiz">My quizzes</a>
+          </li>
+          <li class="list-menu__item">
+            <a href="#" class="list-menu__link _icon-verified">Completed quizzes</a>
+          </li>
+          <li class="list-menu__item">
+            <a href="#" class="list-menu__link _icon-folder">Manage quiz folders</a>
+          </li>
+          <li class="list-menu__item list-menu__item--border">
+            <a href="#" class="list-menu__link _icon-trash">Trash</a>
+          </li>
+          <li class="list-menu__item list-menu__item--padding-top list-menu__item--border">
+            <button class="list-menu__link _icon-user">Profile</button>
+          </li>
+          <li class="list-menu__item list-menu__item--padding-top">
+            <a href="#" class="list-menu__link _icon-share-arrow">Exit</a>
+          </li>
+        </ul>
+        <div class="menu__info info-menu">
+    <div class="info-menu__top">
+        <div class="info-menu__avatar">
+            <img src="./images/dest/header/avatar.webp" alt="user avatar">
+        </div>
+        <div class="info-menu__descr">
+            <div class="info-menu__name">Kostyantyn Lukianenko</div>
+            <div class="info-menu__role">User</div>
+        </div>
+    </div>
+    <div class="info-menu__rating-info">
+        <div class="info-menu__rating-name _icon-pencil"><span>Author rating</span></div>
+        <div class="info-menu__rating-value"><span data-rating-points>1190 points</span></div>
+    </div>
+    <div class="info-menu__rating-info">
+        <div class="info-menu__rating-name _icon-thumbs-up"><span>User rating</span></div>
+        <div class="info-menu__rating-value"><span data-rating-points>353 points</span>, <span>31.87%</span></div>
+    </div>
+</div>
+      </nav>
+    </div>
+    <button class="header__btn btn _icon-plus">Create</button>
+    <div class="header__logo">2WIN</div>
+    <nav class="header__menu">
+      <ul class="header__menu-list">
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">Home</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">Materials for Quiz</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">Feedback</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#" class="header__profile">
+      <img src="./images/dest/header/avatar.webp" alt="user avatar">
+    </a>
+  </div>
+</header>
+    <main class="page">
+      <div class="page__body">
+        <aside class="sidebar-mobile sidebar-mobile--fixed">
+          <nav class="sidebar-mobile__menu">
+            <ul class="sidebar-mobile__menu-list">
+              <li class="sidebar-mobile__menu-item sidebar-mobile__menu-item--active">
+                <a href="#" class="sidebar-mobile__menu-action _icon-quiz">
+                  My quizzes
+                </a>
+              </li>
+              <li class="sidebar-mobile__menu-item">
+                <a href="#" class="sidebar-mobile__menu-action _icon-verified">
+                  Completed
+                </a>
+              </li>
+              <li class="sidebar-mobile__menu-item">
+                <a href="#" class="sidebar-mobile__menu-action _icon-folder">
+                  Manage folders
+                </a>
+              </li>
+              <li class="sidebar-mobile__menu-item">
+                <button class="sidebar-mobile__menu-action _icon-more">
+                  More
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <aside class="sidebar">
+          <nav class="sidebar__menu">
+            <ul class="sidebar__list list-menu">
+              <li class="list-menu__item">
+                <a href="#" class="list-menu__link list-menu__link--active _icon-quiz"><span>My quizzes</span></a>
+              </li>
+              <li class="list-menu__item">
+                <a href="#" class="list-menu__link _icon-verified"><span>Completed quizzes</span></a>
+              </li>
+              <li class="list-menu__item">
+                <a href="#" class="list-menu__link _icon-quiz"><span>Manage quiz folders</span></a>
+              </li>
+              <li class="list-menu__item list-menu__item--border">
+                <a href="#" class="list-menu__link _icon-trash"><span>Trash</span></a>
+              </li>
+              <li class="list-menu__item list-menu__item--padding-top">
+                <a href="#" class="list-menu__link _icon-user"><span>My profile</span></a>
+              </li>
+            </ul>
+          </nav>
+          <div class="sidebar__info info-menu">
+    <div class="info-menu__top">
+        <div class="info-menu__avatar">
+            <img src="./images/dest/header/avatar.webp" alt="user avatar">
+        </div>
+        <div class="info-menu__descr">
+            <div class="info-menu__name">Kostyantyn Lukianenko</div>
+            <div class="info-menu__role">User</div>
+        </div>
+    </div>
+    <div class="info-menu__rating-info">
+        <div class="info-menu__rating-name _icon-pencil"><span>Author rating</span></div>
+        <div class="info-menu__rating-value"><span data-rating-points>1190 points</span></div>
+    </div>
+    <div class="info-menu__rating-info">
+        <div class="info-menu__rating-name _icon-thumbs-up"><span>User rating</span></div>
+        <div class="info-menu__rating-value"><span data-rating-points>353 points</span>, <span>31.87%</span></div>
+    </div>
+</div>
+          <div class="sidebar__trigger">
+            <button class="sidebar__trigger-btn _icon-chevron"><span>Minimize</span></button>
+          </div>
+          <a href="#" class="sidebar__exit _icon-share-arrow"><span>Exit</span></a>
+        </aside>
+        <div class="page__content" style="z-index: 15;">
+          <div class="page__wrapper-top">
+            <div class="breadcrumbs breadcrumbs--margin">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link">My quizzes</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  Folder name
+                </li>
+              </ul>
+            </div>
+            <div class="page__actions">
+              <button class="page__btn-sort _icon-plus">Sorted by</button>
+              <button class="page__btn-add btn _icon-plus">Add new subfolder</button>
+            </div>
+          </div>
+          <div class="page__top-inner">
+            <div class="page__top-action">
+              <button class="page__items-sort-btn _icon-chevron">Quiz name</button>
+              <button class="page__items-sort-btn _icon-chevron">Results and rating</button>
+              <button class="page__items-sort-btn _icon-chevron">Created</button>
+              <button class="page__items-sort-btn _icon-chevron">Category</button>
+              <button class="page__items-sort-btn _icon-chevron">Moderation status</button>
+              <button class="page__items-sort-btn _icon-chevron">Moderation date</button>
+              <button class="page__items-sort-btn _icon-chevron">Last moderation by</button>
+            </div>
+            <div class="page__view-actions">
+              <button class="page__view-action">
+                <img src="./images/dest/icons/table.svg" alt="table icon">
+              </button>
+              <button class="page__view-action _icon-grid"></button>
+            </div>
+          </div>
+          <div class="page__items">
+               <article class="quiz-raw">
+    <div class="quiz-raw__body">
+        <a href="#" class="quiz-raw__link">
+            <img src="./images/dest/quizes/quiz.webp" alt="quiz">
+            <h2 class="quiz-raw__title">
+                Quiz name. Ready to turn your ambitions into achievements – Moderation 2
+            </h2>
+        </a>
+        <div class="quiz-raw__statistics">
+            <time class="quiz-raw__date _icon-calendar" datetime="31.01.2025">31.01.2025</time>
+            <div class="quiz-raw__stat-value _icon-chart">6</div>
+            <div class="quiz-raw__star-rating">
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="_icon-star"></span>
+                <span class="_icon-star"></span>
+            </div>
+            <ul class="quiz-raw__category">
+                <li class="quiz-raw__category-item">
+                    History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Europe History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Ukraine
+                </li>
+            </ul>
+        </div>
+        <div class="quiz-raw__info">
+            <div class="quiz-raw__info-left">
+                <div class="quiz-raw__tag tag tag--warning">Moderate on 33%</div>
+                <div class="quiz-raw__date-wrapper">
+                    <div class="quiz-raw__date-label">Started</div>
+                    <time class="quiz-raw__date" datetime="31.01.2025">31.01.2025</time>
+                </div>
+            </div>
+            <div class="quiz-raw__info-right">
+                <div class="quiz-raw__avatar">MN</div>
+                <div class="quiz-raw__initials">
+                    <div class="quiz-raw__name">Moderator Name</div>
+                    <div class="quiz-raw__role">Beginner Moderator</div>
+                </div>
+            </div>
+        </div>
+        <div class="quiz-raw__action">
+            <div class="quiz-raw__action-left">
+                <button class="quiz-raw__copy-btn quiz-raw-btn _icon-link"></button>
+                <button class="quiz-raw__comments-btn quiz-raw-btn _icon-comment-text">Comments & rates</button>
+                <button class="quiz-raw__edit-btn quiz-raw-btn _icon-pencil-edit"><span>Edit</span></button>
+            </div>
+            <div class="quiz-raw__action-right">
+                <button class="quiz-raw__more-btn quiz-raw-btn _icon-more"></button>
+                <ul class="quiz-raw__action-list">
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-chart">Show results</a>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-quiz">Open quiz page</a>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-link">Copy link</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-copy">Create copy</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-eye-no">Hide quiz</button>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item quiz-raw__action-list-item--delete _icon-trash">Delete</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>  <article class="quiz-raw">
+    <div class="quiz-raw__body">
+        <a href="#" class="quiz-raw__link">
+            <img src="./images/dest/quizes/quiz.webp" alt="quiz">
+            <h2 class="quiz-raw__title">
+                Quiz name. Ready to turn your ambitions into achievements – Moderation 2
+            </h2>
+        </a>
+        <div class="quiz-raw__statistics">
+            <time class="quiz-raw__date _icon-calendar" datetime="31.01.2025">31.01.2025</time>
+            <div class="quiz-raw__stat-value _icon-chart">6</div>
+            <div class="quiz-raw__star-rating">
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="_icon-star"></span>
+                <span class="_icon-star"></span>
+            </div>
+            <ul class="quiz-raw__category">
+                <li class="quiz-raw__category-item">
+                    History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Europe History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Ukraine
+                </li>
+            </ul>
+        </div>
+        <div class="quiz-raw__info">
+            <div class="quiz-raw__info-left">
+                <div class="quiz-raw__tag tag tag--warning">Moderate on 33%</div>
+                <div class="quiz-raw__date-wrapper">
+                    <div class="quiz-raw__date-label">Started</div>
+                    <time class="quiz-raw__date" datetime="31.01.2025">31.01.2025</time>
+                </div>
+            </div>
+            <div class="quiz-raw__info-right">
+                <div class="quiz-raw__avatar">MN</div>
+                <div class="quiz-raw__initials">
+                    <div class="quiz-raw__name">Moderator Name</div>
+                    <div class="quiz-raw__role">Beginner Moderator</div>
+                </div>
+            </div>
+        </div>
+        <div class="quiz-raw__action">
+            <div class="quiz-raw__action-left">
+                <button class="quiz-raw__copy-btn quiz-raw-btn _icon-link"></button>
+                <button class="quiz-raw__comments-btn quiz-raw-btn _icon-comment-text">Comments & rates</button>
+                <button class="quiz-raw__edit-btn quiz-raw-btn _icon-pencil-edit"><span>Edit</span></button>
+            </div>
+            <div class="quiz-raw__action-right">
+                <button class="quiz-raw__more-btn quiz-raw-btn _icon-more"></button>
+                <ul class="quiz-raw__action-list">
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-chart">Show results</a>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-quiz">Open quiz page</a>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-link">Copy link</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-copy">Create copy</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-eye-no">Hide quiz</button>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item quiz-raw__action-list-item--delete _icon-trash">Delete</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>  <article class="quiz-raw">
+    <div class="quiz-raw__body">
+        <a href="#" class="quiz-raw__link">
+            <img src="./images/dest/quizes/quiz.webp" alt="quiz">
+            <h2 class="quiz-raw__title">
+                Quiz name. Ready to turn your ambitions into achievements – Moderation 2
+            </h2>
+        </a>
+        <div class="quiz-raw__statistics">
+            <time class="quiz-raw__date _icon-calendar" datetime="31.01.2025">31.01.2025</time>
+            <div class="quiz-raw__stat-value _icon-chart">6</div>
+            <div class="quiz-raw__star-rating">
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="_icon-star"></span>
+                <span class="_icon-star"></span>
+            </div>
+            <ul class="quiz-raw__category">
+                <li class="quiz-raw__category-item">
+                    History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Europe History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Ukraine
+                </li>
+            </ul>
+        </div>
+        <div class="quiz-raw__info">
+            <div class="quiz-raw__info-left">
+                <div class="quiz-raw__tag tag tag--warning">Moderate on 33%</div>
+                <div class="quiz-raw__date-wrapper">
+                    <div class="quiz-raw__date-label">Started</div>
+                    <time class="quiz-raw__date" datetime="31.01.2025">31.01.2025</time>
+                </div>
+            </div>
+            <div class="quiz-raw__info-right">
+                <div class="quiz-raw__avatar">MN</div>
+                <div class="quiz-raw__initials">
+                    <div class="quiz-raw__name">Moderator Name</div>
+                    <div class="quiz-raw__role">Beginner Moderator</div>
+                </div>
+            </div>
+        </div>
+        <div class="quiz-raw__action">
+            <div class="quiz-raw__action-left">
+                <button class="quiz-raw__copy-btn quiz-raw-btn _icon-link"></button>
+                <button class="quiz-raw__comments-btn quiz-raw-btn _icon-comment-text">Comments & rates</button>
+                <button class="quiz-raw__edit-btn quiz-raw-btn _icon-pencil-edit"><span>Edit</span></button>
+            </div>
+            <div class="quiz-raw__action-right">
+                <button class="quiz-raw__more-btn quiz-raw-btn _icon-more"></button>
+                <ul class="quiz-raw__action-list">
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-chart">Show results</a>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-quiz">Open quiz page</a>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-link">Copy link</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-copy">Create copy</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-eye-no">Hide quiz</button>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item quiz-raw__action-list-item--delete _icon-trash">Delete</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>  <article class="quiz-raw">
+    <div class="quiz-raw__body">
+        <a href="#" class="quiz-raw__link">
+            <img src="./images/dest/quizes/quiz.webp" alt="quiz">
+            <h2 class="quiz-raw__title">
+                Quiz name. Ready to turn your ambitions into achievements – Moderation 2
+            </h2>
+        </a>
+        <div class="quiz-raw__statistics">
+            <time class="quiz-raw__date _icon-calendar" datetime="31.01.2025">31.01.2025</time>
+            <div class="quiz-raw__stat-value _icon-chart">6</div>
+            <div class="quiz-raw__star-rating">
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="_icon-star"></span>
+                <span class="_icon-star"></span>
+            </div>
+            <ul class="quiz-raw__category">
+                <li class="quiz-raw__category-item">
+                    History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Europe History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Ukraine
+                </li>
+            </ul>
+        </div>
+        <div class="quiz-raw__info">
+            <div class="quiz-raw__info-left">
+                <div class="quiz-raw__tag tag tag--warning">Moderate on 33%</div>
+                <div class="quiz-raw__date-wrapper">
+                    <div class="quiz-raw__date-label">Started</div>
+                    <time class="quiz-raw__date" datetime="31.01.2025">31.01.2025</time>
+                </div>
+            </div>
+            <div class="quiz-raw__info-right">
+                <div class="quiz-raw__avatar">MN</div>
+                <div class="quiz-raw__initials">
+                    <div class="quiz-raw__name">Moderator Name</div>
+                    <div class="quiz-raw__role">Beginner Moderator</div>
+                </div>
+            </div>
+        </div>
+        <div class="quiz-raw__action">
+            <div class="quiz-raw__action-left">
+                <button class="quiz-raw__copy-btn quiz-raw-btn _icon-link"></button>
+                <button class="quiz-raw__comments-btn quiz-raw-btn _icon-comment-text">Comments & rates</button>
+                <button class="quiz-raw__edit-btn quiz-raw-btn _icon-pencil-edit"><span>Edit</span></button>
+            </div>
+            <div class="quiz-raw__action-right">
+                <button class="quiz-raw__more-btn quiz-raw-btn _icon-more"></button>
+                <ul class="quiz-raw__action-list">
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-chart">Show results</a>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-quiz">Open quiz page</a>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-link">Copy link</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-copy">Create copy</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-eye-no">Hide quiz</button>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item quiz-raw__action-list-item--delete _icon-trash">Delete</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>  <article class="quiz-raw">
+    <div class="quiz-raw__body">
+        <a href="#" class="quiz-raw__link">
+            <img src="./images/dest/quizes/quiz.webp" alt="quiz">
+            <h2 class="quiz-raw__title">
+                Quiz name. Ready to turn your ambitions into achievements – Moderation 2
+            </h2>
+        </a>
+        <div class="quiz-raw__statistics">
+            <time class="quiz-raw__date _icon-calendar" datetime="31.01.2025">31.01.2025</time>
+            <div class="quiz-raw__stat-value _icon-chart">6</div>
+            <div class="quiz-raw__star-rating">
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="_icon-star"></span>
+                <span class="_icon-star"></span>
+            </div>
+            <ul class="quiz-raw__category">
+                <li class="quiz-raw__category-item">
+                    History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Europe History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Ukraine
+                </li>
+            </ul>
+        </div>
+        <div class="quiz-raw__info">
+            <div class="quiz-raw__info-left">
+                <div class="quiz-raw__tag tag tag--warning">Moderate on 33%</div>
+                <div class="quiz-raw__date-wrapper">
+                    <div class="quiz-raw__date-label">Started</div>
+                    <time class="quiz-raw__date" datetime="31.01.2025">31.01.2025</time>
+                </div>
+            </div>
+            <div class="quiz-raw__info-right">
+                <div class="quiz-raw__avatar">MN</div>
+                <div class="quiz-raw__initials">
+                    <div class="quiz-raw__name">Moderator Name</div>
+                    <div class="quiz-raw__role">Beginner Moderator</div>
+                </div>
+            </div>
+        </div>
+        <div class="quiz-raw__action">
+            <div class="quiz-raw__action-left">
+                <button class="quiz-raw__copy-btn quiz-raw-btn _icon-link"></button>
+                <button class="quiz-raw__comments-btn quiz-raw-btn _icon-comment-text">Comments & rates</button>
+                <button class="quiz-raw__edit-btn quiz-raw-btn _icon-pencil-edit"><span>Edit</span></button>
+            </div>
+            <div class="quiz-raw__action-right">
+                <button class="quiz-raw__more-btn quiz-raw-btn _icon-more"></button>
+                <ul class="quiz-raw__action-list">
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-chart">Show results</a>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-quiz">Open quiz page</a>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-link">Copy link</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-copy">Create copy</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-eye-no">Hide quiz</button>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item quiz-raw__action-list-item--delete _icon-trash">Delete</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>  <article class="quiz-raw">
+    <div class="quiz-raw__body">
+        <a href="#" class="quiz-raw__link">
+            <img src="./images/dest/quizes/quiz.webp" alt="quiz">
+            <h2 class="quiz-raw__title">
+                Quiz name. Ready to turn your ambitions into achievements – Moderation 2
+            </h2>
+        </a>
+        <div class="quiz-raw__statistics">
+            <time class="quiz-raw__date _icon-calendar" datetime="31.01.2025">31.01.2025</time>
+            <div class="quiz-raw__stat-value _icon-chart">6</div>
+            <div class="quiz-raw__star-rating">
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="_icon-star"></span>
+                <span class="_icon-star"></span>
+            </div>
+            <ul class="quiz-raw__category">
+                <li class="quiz-raw__category-item">
+                    History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Europe History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Ukraine
+                </li>
+            </ul>
+        </div>
+        <div class="quiz-raw__info">
+            <div class="quiz-raw__info-left">
+                <div class="quiz-raw__tag tag tag--warning">Moderate on 33%</div>
+                <div class="quiz-raw__date-wrapper">
+                    <div class="quiz-raw__date-label">Started</div>
+                    <time class="quiz-raw__date" datetime="31.01.2025">31.01.2025</time>
+                </div>
+            </div>
+            <div class="quiz-raw__info-right">
+                <div class="quiz-raw__avatar">MN</div>
+                <div class="quiz-raw__initials">
+                    <div class="quiz-raw__name">Moderator Name</div>
+                    <div class="quiz-raw__role">Beginner Moderator</div>
+                </div>
+            </div>
+        </div>
+        <div class="quiz-raw__action">
+            <div class="quiz-raw__action-left">
+                <button class="quiz-raw__copy-btn quiz-raw-btn _icon-link"></button>
+                <button class="quiz-raw__comments-btn quiz-raw-btn _icon-comment-text">Comments & rates</button>
+                <button class="quiz-raw__edit-btn quiz-raw-btn _icon-pencil-edit"><span>Edit</span></button>
+            </div>
+            <div class="quiz-raw__action-right">
+                <button class="quiz-raw__more-btn quiz-raw-btn _icon-more"></button>
+                <ul class="quiz-raw__action-list">
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-chart">Show results</a>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-quiz">Open quiz page</a>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-link">Copy link</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-copy">Create copy</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-eye-no">Hide quiz</button>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item quiz-raw__action-list-item--delete _icon-trash">Delete</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>  <article class="quiz-raw">
+    <div class="quiz-raw__body">
+        <a href="#" class="quiz-raw__link">
+            <img src="./images/dest/quizes/quiz.webp" alt="quiz">
+            <h2 class="quiz-raw__title">
+                Quiz name. Ready to turn your ambitions into achievements – Moderation 2
+            </h2>
+        </a>
+        <div class="quiz-raw__statistics">
+            <time class="quiz-raw__date _icon-calendar" datetime="31.01.2025">31.01.2025</time>
+            <div class="quiz-raw__stat-value _icon-chart">6</div>
+            <div class="quiz-raw__star-rating">
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="_icon-star"></span>
+                <span class="_icon-star"></span>
+            </div>
+            <ul class="quiz-raw__category">
+                <li class="quiz-raw__category-item">
+                    History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Europe History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Ukraine
+                </li>
+            </ul>
+        </div>
+        <div class="quiz-raw__info">
+            <div class="quiz-raw__info-left">
+                <div class="quiz-raw__tag tag tag--warning">Moderate on 33%</div>
+                <div class="quiz-raw__date-wrapper">
+                    <div class="quiz-raw__date-label">Started</div>
+                    <time class="quiz-raw__date" datetime="31.01.2025">31.01.2025</time>
+                </div>
+            </div>
+            <div class="quiz-raw__info-right">
+                <div class="quiz-raw__avatar">MN</div>
+                <div class="quiz-raw__initials">
+                    <div class="quiz-raw__name">Moderator Name</div>
+                    <div class="quiz-raw__role">Beginner Moderator</div>
+                </div>
+            </div>
+        </div>
+        <div class="quiz-raw__action">
+            <div class="quiz-raw__action-left">
+                <button class="quiz-raw__copy-btn quiz-raw-btn _icon-link"></button>
+                <button class="quiz-raw__comments-btn quiz-raw-btn _icon-comment-text">Comments & rates</button>
+                <button class="quiz-raw__edit-btn quiz-raw-btn _icon-pencil-edit"><span>Edit</span></button>
+            </div>
+            <div class="quiz-raw__action-right">
+                <button class="quiz-raw__more-btn quiz-raw-btn _icon-more"></button>
+                <ul class="quiz-raw__action-list">
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-chart">Show results</a>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-quiz">Open quiz page</a>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-link">Copy link</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-copy">Create copy</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-eye-no">Hide quiz</button>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item quiz-raw__action-list-item--delete _icon-trash">Delete</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>  <article class="quiz-raw">
+    <div class="quiz-raw__body">
+        <a href="#" class="quiz-raw__link">
+            <img src="./images/dest/quizes/quiz.webp" alt="quiz">
+            <h2 class="quiz-raw__title">
+                Quiz name. Ready to turn your ambitions into achievements – Moderation 2
+            </h2>
+        </a>
+        <div class="quiz-raw__statistics">
+            <time class="quiz-raw__date _icon-calendar" datetime="31.01.2025">31.01.2025</time>
+            <div class="quiz-raw__stat-value _icon-chart">6</div>
+            <div class="quiz-raw__star-rating">
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="_icon-star"></span>
+                <span class="_icon-star"></span>
+            </div>
+            <ul class="quiz-raw__category">
+                <li class="quiz-raw__category-item">
+                    History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Europe History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Ukraine
+                </li>
+            </ul>
+        </div>
+        <div class="quiz-raw__info">
+            <div class="quiz-raw__info-left">
+                <div class="quiz-raw__tag tag tag--warning">Moderate on 33%</div>
+                <div class="quiz-raw__date-wrapper">
+                    <div class="quiz-raw__date-label">Started</div>
+                    <time class="quiz-raw__date" datetime="31.01.2025">31.01.2025</time>
+                </div>
+            </div>
+            <div class="quiz-raw__info-right">
+                <div class="quiz-raw__avatar">MN</div>
+                <div class="quiz-raw__initials">
+                    <div class="quiz-raw__name">Moderator Name</div>
+                    <div class="quiz-raw__role">Beginner Moderator</div>
+                </div>
+            </div>
+        </div>
+        <div class="quiz-raw__action">
+            <div class="quiz-raw__action-left">
+                <button class="quiz-raw__copy-btn quiz-raw-btn _icon-link"></button>
+                <button class="quiz-raw__comments-btn quiz-raw-btn _icon-comment-text">Comments & rates</button>
+                <button class="quiz-raw__edit-btn quiz-raw-btn _icon-pencil-edit"><span>Edit</span></button>
+            </div>
+            <div class="quiz-raw__action-right">
+                <button class="quiz-raw__more-btn quiz-raw-btn _icon-more"></button>
+                <ul class="quiz-raw__action-list">
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-chart">Show results</a>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-quiz">Open quiz page</a>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-link">Copy link</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-copy">Create copy</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-eye-no">Hide quiz</button>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item quiz-raw__action-list-item--delete _icon-trash">Delete</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>  <article class="quiz-raw">
+    <div class="quiz-raw__body">
+        <a href="#" class="quiz-raw__link">
+            <img src="./images/dest/quizes/quiz.webp" alt="quiz">
+            <h2 class="quiz-raw__title">
+                Quiz name. Ready to turn your ambitions into achievements – Moderation 2
+            </h2>
+        </a>
+        <div class="quiz-raw__statistics">
+            <time class="quiz-raw__date _icon-calendar" datetime="31.01.2025">31.01.2025</time>
+            <div class="quiz-raw__stat-value _icon-chart">6</div>
+            <div class="quiz-raw__star-rating">
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="_icon-star"></span>
+                <span class="_icon-star"></span>
+            </div>
+            <ul class="quiz-raw__category">
+                <li class="quiz-raw__category-item">
+                    History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Europe History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Ukraine
+                </li>
+            </ul>
+        </div>
+        <div class="quiz-raw__info">
+            <div class="quiz-raw__info-left">
+                <div class="quiz-raw__tag tag tag--warning">Moderate on 33%</div>
+                <div class="quiz-raw__date-wrapper">
+                    <div class="quiz-raw__date-label">Started</div>
+                    <time class="quiz-raw__date" datetime="31.01.2025">31.01.2025</time>
+                </div>
+            </div>
+            <div class="quiz-raw__info-right">
+                <div class="quiz-raw__avatar">MN</div>
+                <div class="quiz-raw__initials">
+                    <div class="quiz-raw__name">Moderator Name</div>
+                    <div class="quiz-raw__role">Beginner Moderator</div>
+                </div>
+            </div>
+        </div>
+        <div class="quiz-raw__action">
+            <div class="quiz-raw__action-left">
+                <button class="quiz-raw__copy-btn quiz-raw-btn _icon-link"></button>
+                <button class="quiz-raw__comments-btn quiz-raw-btn _icon-comment-text">Comments & rates</button>
+                <button class="quiz-raw__edit-btn quiz-raw-btn _icon-pencil-edit"><span>Edit</span></button>
+            </div>
+            <div class="quiz-raw__action-right">
+                <button class="quiz-raw__more-btn quiz-raw-btn _icon-more"></button>
+                <ul class="quiz-raw__action-list">
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-chart">Show results</a>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-quiz">Open quiz page</a>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-link">Copy link</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-copy">Create copy</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-eye-no">Hide quiz</button>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item quiz-raw__action-list-item--delete _icon-trash">Delete</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>  <article class="quiz-raw">
+    <div class="quiz-raw__body">
+        <a href="#" class="quiz-raw__link">
+            <img src="./images/dest/quizes/quiz.webp" alt="quiz">
+            <h2 class="quiz-raw__title">
+                Quiz name. Ready to turn your ambitions into achievements – Moderation 2
+            </h2>
+        </a>
+        <div class="quiz-raw__statistics">
+            <time class="quiz-raw__date _icon-calendar" datetime="31.01.2025">31.01.2025</time>
+            <div class="quiz-raw__stat-value _icon-chart">6</div>
+            <div class="quiz-raw__star-rating">
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="filled _icon-star"></span>
+                <span class="_icon-star"></span>
+                <span class="_icon-star"></span>
+            </div>
+            <ul class="quiz-raw__category">
+                <li class="quiz-raw__category-item">
+                    History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Europe History
+                </li>
+                <li class="quiz-raw__category-item">
+                    Ukraine
+                </li>
+            </ul>
+        </div>
+        <div class="quiz-raw__info">
+            <div class="quiz-raw__info-left">
+                <div class="quiz-raw__tag tag tag--warning">Moderate on 33%</div>
+                <div class="quiz-raw__date-wrapper">
+                    <div class="quiz-raw__date-label">Started</div>
+                    <time class="quiz-raw__date" datetime="31.01.2025">31.01.2025</time>
+                </div>
+            </div>
+            <div class="quiz-raw__info-right">
+                <div class="quiz-raw__avatar">MN</div>
+                <div class="quiz-raw__initials">
+                    <div class="quiz-raw__name">Moderator Name</div>
+                    <div class="quiz-raw__role">Beginner Moderator</div>
+                </div>
+            </div>
+        </div>
+        <div class="quiz-raw__action">
+            <div class="quiz-raw__action-left">
+                <button class="quiz-raw__copy-btn quiz-raw-btn _icon-link"></button>
+                <button class="quiz-raw__comments-btn quiz-raw-btn _icon-comment-text">Comments & rates</button>
+                <button class="quiz-raw__edit-btn quiz-raw-btn _icon-pencil-edit"><span>Edit</span></button>
+            </div>
+            <div class="quiz-raw__action-right">
+                <button class="quiz-raw__more-btn quiz-raw-btn _icon-more"></button>
+                <ul class="quiz-raw__action-list">
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-chart">Show results</a>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item _icon-quiz">Open quiz page</a>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-link">Copy link</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-copy">Create copy</button>
+                    </li>
+                    <li>
+                        <button class="quiz-raw__action-list-item _icon-eye-no">Hide quiz</button>
+                    </li>
+                    <li>
+                        <a href="#" class="quiz-raw__action-list-item quiz-raw__action-list-item--delete _icon-trash">Delete</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>  
+          </div>
+            <div class="page__bottom-action"></div>
+          </div>
+        </div>
+    </main>
+    <div class="popup popup--fixed" data-popup="menu">
+      <div class="popup__overlay"></div>
+      <div class="popup__content">
+        <button class="popup__close _icon-close"></button>
+        <div class="popup__info info-menu">
+    <div class="info-menu__top">
+        <div class="info-menu__avatar">
+            <img src="./images/dest/header/avatar.webp" alt="user avatar">
+        </div>
+        <div class="info-menu__descr">
+            <div class="info-menu__name">Kostyantyn Lukianenko</div>
+            <div class="info-menu__role">User</div>
+        </div>
+    </div>
+    <div class="info-menu__rating-info">
+        <div class="info-menu__rating-name _icon-pencil"><span>Author rating</span></div>
+        <div class="info-menu__rating-value"><span data-rating-points>1190 points</span></div>
+    </div>
+    <div class="info-menu__rating-info">
+        <div class="info-menu__rating-name _icon-thumbs-up"><span>User rating</span></div>
+        <div class="info-menu__rating-value"><span data-rating-points>353 points</span>, <span>31.87%</span></div>
+    </div>
+</div>
+        <nav class="popup__nav">
+          <ul class="popup__list">
+            <li class="popup__item popup__item--padding-top popup__item--border">
+              <a href="#" class="popup__link _icon-trash">Trash</a>
+            </li>
+            <li class="popup__item">
+              <a href="#" class="popup__link _icon-user">My profile</a>
+            </li>
+            <li class="popup__item popup__item--padding-top popup__item--border">
+              <a href="#" class="popup__link _icon-share-arrow">Exit</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="popup popup--fixed" data-popup="sort">
+      <div class="popup__content">
+        <button class="popup__close _icon-close"></button>
+        <div class="popup__name">Sorted by</div>
+        <form action="#" class="popup__form form-popup">
+          <fieldset class="form-popup__fieldset">
+            <div class="form-popup__radio">
+              <input id="name_a_z" class="form-popup__input" type="radio" value="a-z" name="name" checked>
+              <label for="name_a_z" class="form-popup__label">
+                <span class="form-popup__text">Quiz name: A to Z</span>
+              </label>
+            </div>
+            <div class="form-popup__radio">
+              <input id="name_z_a" class="form-popup__input" type="radio" value="z-a" name="name">
+              <label for="name_z_a" class="form-popup__label">
+                <span class="form-popup__text">Quiz name: Z to A</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form-popup__fieldset">
+            <div class="form-popup__radio">
+              <input id="rating_h_l" class="form-popup__input" type="radio" value="h-l" name="rating">
+              <label for="rating_h_l" class="form-popup__label">
+                <span class="form-popup__text">Results and rating: High to Low</span>
+              </label>
+            </div>
+            <div class="form-popup__radio">
+              <input id="rating_l_h" class="form-popup__input" type="radio" value="l-h" name="rating">
+              <label for="rating_l_h" class="form-popup__label">
+                <span class="form-popup__text">Results and rating: Low to High</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form-popup__fieldset">
+            <div class="form-popup__radio">
+              <input id="created_o_n" class="form-popup__input" type="radio" value="o-n" name="created">
+              <label for="created_o_n" class="form-popup__label">
+                <span class="form-popup__text">Created: Oldest to Newest</span>
+              </label>
+            </div>
+            <div class="form-popup__radio">
+              <input id="created_n_o" class="form-popup__input" type="radio" value="n-o" name="created">
+              <label for="created_n_o" class="form-popup__label">
+                <span class="form-popup__text">Created: Newest to Oldest</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form-popup__fieldset">
+            <div class="form-popup__radio">
+              <input id="category_a_z" class="form-popup__input" type="radio" value="a-z" name="category">
+              <label for="category_a_z" class="form-popup__label">
+                <span class="form-popup__text">Category: A to Z</span>
+              </label>
+            </div>
+            <div class="form-popup__radio">
+              <input id="category_z_a" class="form-popup__input" type="radio" value="z-a" name="category">
+              <label for="category_z_a" class="form-popup__label">
+                <span class="form-popup__text">Category: Z to A</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form-popup__fieldset">
+            <div class="form-popup__radio">
+              <input id="moderation_status_h_l" class="form-popup__input" type="radio" value="h-l"
+                name="moderation-status">
+              <label for="moderation_status_h_l" class="form-popup__label">
+                <span class="form-popup__text">Moderation status: High to Low</span>
+              </label>
+            </div>
+            <div class="form-popup__radio">
+              <input id="moderation_status_l_h" class="form-popup__input" type="radio" value="l-h"
+                name="moderation-status">
+              <label for="moderation_status_l_h" class="form-popup__label">
+                <span class="form-popup__text">Moderation status: Low to High</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form-popup__fieldset">
+            <div class="form-popup__radio">
+              <input id="moderation_date_o_n" class="form-popup__input" type="radio" value="o-n" name="moderation-date">
+              <label for="moderation_date_o_n" class="form-popup__label">
+                <span class="form-popup__text">Moderation date: Oldest to Newest</span>
+              </label>
+            </div>
+            <div class="form-popup__radio">
+              <input id="moderation_date_n_o" class="form-popup__input" type="radio" value="n-o" name="moderation-date">
+              <label for="moderation_date_n_o" class="form-popup__label">
+                <span class="form-popup__text">Moderation date: Oldest to Newest</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form-popup__fieldset">
+            <div class="form-popup__radio">
+              <input id="last_moderation_a_z" class="form-popup__input" type="radio" value="a-z" name="last-moderation">
+              <label for="last_moderation_a_z" class="form-popup__label">
+                <span class="form-popup__text">Last moderation by: A to Z</span>
+              </label>
+            </div>
+            <div class="form-popup__radio">
+              <input id="last_moderation_z_a" class="form-popup__input" type="radio" value="z-a" name="last-moderation">
+              <label for="last_moderation_z_a" class="form-popup__label">
+                <span class="form-popup__text">Last moderation by: Z to A</span>
+              </label>
+            </div>
+          </fieldset>
+          <button class="form-popup__btn btn">Apply</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

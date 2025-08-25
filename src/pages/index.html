@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include("_head.html")
+
+<body>
+  <div class="wrapper">
+    @@include("_header.html")
+    <main class="page">
+      <div class="page__body">
+        <aside class="sidebar-mobile sidebar-mobile--fixed">
+          <nav class="sidebar-mobile__menu">
+            <ul class="sidebar-mobile__menu-list">
+              <li class="sidebar-mobile__menu-item sidebar-mobile__menu-item--active">
+                <a href="#" class="sidebar-mobile__menu-action _icon-quiz">
+                  My quizzes
+                </a>
+              </li>
+              <li class="sidebar-mobile__menu-item">
+                <a href="#" class="sidebar-mobile__menu-action _icon-verified">
+                  Completed
+                </a>
+              </li>
+              <li class="sidebar-mobile__menu-item">
+                <a href="#" class="sidebar-mobile__menu-action _icon-folder">
+                  Manage folders
+                </a>
+              </li>
+              <li class="sidebar-mobile__menu-item">
+                <button class="sidebar-mobile__menu-action _icon-more">
+                  More
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <aside class="sidebar">
+          <nav class="sidebar__menu">
+            <ul class="sidebar__list list-menu">
+              <li class="list-menu__item">
+                <a href="#" class="list-menu__link list-menu__link--active _icon-quiz"><span>My quizzes</span></a>
+              </li>
+              <li class="list-menu__item">
+                <a href="#" class="list-menu__link _icon-verified"><span>Completed quizzes</span></a>
+              </li>
+              <li class="list-menu__item">
+                <a href="#" class="list-menu__link _icon-quiz"><span>Manage quiz folders</span></a>
+              </li>
+              <li class="list-menu__item list-menu__item--border">
+                <a href="#" class="list-menu__link _icon-trash"><span>Trash</span></a>
+              </li>
+              <li class="list-menu__item list-menu__item--padding-top">
+                <a href="#" class="list-menu__link _icon-user"><span>My profile</span></a>
+              </li>
+            </ul>
+          </nav>
+          @@include("_info-menu.html", { additionalClass: "sidebar__info" })
+          <div class="sidebar__trigger">
+            <button class="sidebar__trigger-btn _icon-chevron"><span>Minimize</span></button>
+          </div>
+          <a href="#" class="sidebar__exit _icon-share-arrow"><span>Exit</span></a>
+        </aside>
+        <div class="page__content" style="z-index: 15;">
+          <div class="page__wrapper-top">
+            <div class="breadcrumbs breadcrumbs--margin">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link">My quizzes</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  Folder name
+                </li>
+              </ul>
+            </div>
+            <div class="page__actions">
+              <button class="page__btn-sort _icon-plus">Sorted by</button>
+              <button class="page__btn-add btn _icon-plus">Add new subfolder</button>
+            </div>
+          </div>
+          <div class="page__top-inner">
+            <div class="page__top-action">
+              <button class="page__items-sort-btn _icon-chevron">Quiz name</button>
+              <button class="page__items-sort-btn _icon-chevron">Results and rating</button>
+              <button class="page__items-sort-btn _icon-chevron">Created</button>
+              <button class="page__items-sort-btn _icon-chevron">Category</button>
+              <button class="page__items-sort-btn _icon-chevron">Moderation status</button>
+              <button class="page__items-sort-btn _icon-chevron">Moderation date</button>
+              <button class="page__items-sort-btn _icon-chevron">Last moderation by</button>
+            </div>
+            <div class="page__view-actions">
+              <button class="page__view-action">
+                <img src="@img/dest/icons/table.svg" alt="table icon">
+              </button>
+              <button class="page__view-action _icon-grid"></button>
+            </div>
+          </div>
+          <div class="page__items">
+              @@for (let i = 0; i < 10; i++) { @@include("_quiz-raw.html") } 
+          </div>
+            <div class="page__bottom-action"></div>
+          </div>
+        </div>
+    </main>
+    <div class="popup popup--fixed" data-popup="menu">
+      <div class="popup__overlay"></div>
+      <div class="popup__content">
+        <button class="popup__close _icon-close"></button>
+        @@include("_info-menu.html", {
+        additionalClass: "popup__info"
+        })
+        <nav class="popup__nav">
+          <ul class="popup__list">
+            <li class="popup__item popup__item--padding-top popup__item--border">
+              <a href="#" class="popup__link _icon-trash">Trash</a>
+            </li>
+            <li class="popup__item">
+              <a href="#" class="popup__link _icon-user">My profile</a>
+            </li>
+            <li class="popup__item popup__item--padding-top popup__item--border">
+              <a href="#" class="popup__link _icon-share-arrow">Exit</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="popup popup--fixed" data-popup="sort">
+      <div class="popup__content">
+        <button class="popup__close _icon-close"></button>
+        <div class="popup__name">Sorted by</div>
+        <form action="#" class="popup__form form-popup">
+          <fieldset class="form-popup__fieldset">
+            <div class="form-popup__radio">
+              <input id="name_a_z" class="form-popup__input" type="radio" value="a-z" name="name" checked>
+              <label for="name_a_z" class="form-popup__label">
+                <span class="form-popup__text">Quiz name: A to Z</span>
+              </label>
+            </div>
+            <div class="form-popup__radio">
+              <input id="name_z_a" class="form-popup__input" type="radio" value="z-a" name="name">
+              <label for="name_z_a" class="form-popup__label">
+                <span class="form-popup__text">Quiz name: Z to A</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form-popup__fieldset">
+            <div class="form-popup__radio">
+              <input id="rating_h_l" class="form-popup__input" type="radio" value="h-l" name="rating">
+              <label for="rating_h_l" class="form-popup__label">
+                <span class="form-popup__text">Results and rating: High to Low</span>
+              </label>
+            </div>
+            <div class="form-popup__radio">
+              <input id="rating_l_h" class="form-popup__input" type="radio" value="l-h" name="rating">
+              <label for="rating_l_h" class="form-popup__label">
+                <span class="form-popup__text">Results and rating: Low to High</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form-popup__fieldset">
+            <div class="form-popup__radio">
+              <input id="created_o_n" class="form-popup__input" type="radio" value="o-n" name="created">
+              <label for="created_o_n" class="form-popup__label">
+                <span class="form-popup__text">Created: Oldest to Newest</span>
+              </label>
+            </div>
+            <div class="form-popup__radio">
+              <input id="created_n_o" class="form-popup__input" type="radio" value="n-o" name="created">
+              <label for="created_n_o" class="form-popup__label">
+                <span class="form-popup__text">Created: Newest to Oldest</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form-popup__fieldset">
+            <div class="form-popup__radio">
+              <input id="category_a_z" class="form-popup__input" type="radio" value="a-z" name="category">
+              <label for="category_a_z" class="form-popup__label">
+                <span class="form-popup__text">Category: A to Z</span>
+              </label>
+            </div>
+            <div class="form-popup__radio">
+              <input id="category_z_a" class="form-popup__input" type="radio" value="z-a" name="category">
+              <label for="category_z_a" class="form-popup__label">
+                <span class="form-popup__text">Category: Z to A</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form-popup__fieldset">
+            <div class="form-popup__radio">
+              <input id="moderation_status_h_l" class="form-popup__input" type="radio" value="h-l"
+                name="moderation-status">
+              <label for="moderation_status_h_l" class="form-popup__label">
+                <span class="form-popup__text">Moderation status: High to Low</span>
+              </label>
+            </div>
+            <div class="form-popup__radio">
+              <input id="moderation_status_l_h" class="form-popup__input" type="radio" value="l-h"
+                name="moderation-status">
+              <label for="moderation_status_l_h" class="form-popup__label">
+                <span class="form-popup__text">Moderation status: Low to High</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form-popup__fieldset">
+            <div class="form-popup__radio">
+              <input id="moderation_date_o_n" class="form-popup__input" type="radio" value="o-n" name="moderation-date">
+              <label for="moderation_date_o_n" class="form-popup__label">
+                <span class="form-popup__text">Moderation date: Oldest to Newest</span>
+              </label>
+            </div>
+            <div class="form-popup__radio">
+              <input id="moderation_date_n_o" class="form-popup__input" type="radio" value="n-o" name="moderation-date">
+              <label for="moderation_date_n_o" class="form-popup__label">
+                <span class="form-popup__text">Moderation date: Oldest to Newest</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form-popup__fieldset">
+            <div class="form-popup__radio">
+              <input id="last_moderation_a_z" class="form-popup__input" type="radio" value="a-z" name="last-moderation">
+              <label for="last_moderation_a_z" class="form-popup__label">
+                <span class="form-popup__text">Last moderation by: A to Z</span>
+              </label>
+            </div>
+            <div class="form-popup__radio">
+              <input id="last_moderation_z_a" class="form-popup__input" type="radio" value="z-a" name="last-moderation">
+              <label for="last_moderation_z_a" class="form-popup__label">
+                <span class="form-popup__text">Last moderation by: Z to A</span>
+              </label>
+            </div>
+          </fieldset>
+          <button class="form-popup__btn btn">Apply</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

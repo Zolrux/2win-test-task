@@ -1,0 +1,33 @@
+@use "sass:math";
+
+$containerWidthValue: 1920;
+$_paddingContainerInlineValue: 15;
+
+$containerWidth: math.div($containerWidthValue, 16) + rem;
+$paddingContainerInline: math.div($_paddingContainerInlineValue, 16) + rem;
+
+// colors
+
+$primary: #d13980;
+$secondary: #fff;
+$success: #3dad4b;
+$info: #66c0da;
+$warning: #f7ca2e;
+$danger: #f86c6b;
+$dark: #333;
+$black: #000;
+$grey: #e3e3e3;
+$site-bg: #1e1e3e;
+$site-bg-contrast: $secondary;
+$text-color: #2e2e54;
+$text-color-contrast: $secondary;
+$text-color-light: #69748c;
+$link-color-active: #bc3373;
+$table-bg: #F5F6F7;
+$border-color: #d2d4d8;
+$border-color-active: rgba(102, 192, 218, .8);
+$menu-sidebar-link: $border-color;
+$menu-bg: $text-color;
+$btn-bg: $primary;
+$btn-text: $secondary;
+$btn-bg-hover: $link-color-active;

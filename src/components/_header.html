@@ -1,0 +1,51 @@
+<header class="header">
+  <div class="header__body">
+    <div class="header__mobile-menu menu">
+      <button type="button" class="menu__icon _icon-menu"></button>
+      <nav class="menu__body">
+        <button class="menu__close _icon-close"></button>
+        <ul class="menu__list list-menu">
+          <li class="list-menu__item">
+            <a href="#" class="list-menu__link list-menu__link--active _icon-quiz">My quizzes</a>
+          </li>
+          <li class="list-menu__item">
+            <a href="#" class="list-menu__link _icon-verified">Completed quizzes</a>
+          </li>
+          <li class="list-menu__item">
+            <a href="#" class="list-menu__link _icon-folder">Manage quiz folders</a>
+          </li>
+          <li class="list-menu__item list-menu__item--border">
+            <a href="#" class="list-menu__link _icon-trash">Trash</a>
+          </li>
+          <li class="list-menu__item list-menu__item--padding-top list-menu__item--border">
+            <button class="list-menu__link _icon-user">Profile</button>
+          </li>
+          <li class="list-menu__item list-menu__item--padding-top">
+            <a href="#" class="list-menu__link _icon-share-arrow">Exit</a>
+          </li>
+        </ul>
+        @@include("_info-menu.html", {
+          additionalClass: "menu__info"
+        })
+      </nav>
+    </div>
+    <button class="header__btn btn _icon-plus">Create</button>
+    <div class="header__logo">2WIN</div>
+    <nav class="header__menu">
+      <ul class="header__menu-list">
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">Home</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">Materials for Quiz</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">Feedback</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#" class="header__profile">
+      <img src="@img/dest/header/avatar.webp" alt="user avatar">
+    </a>
+  </div>
+</header>
