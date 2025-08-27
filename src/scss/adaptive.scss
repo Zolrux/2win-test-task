@@ -180,7 +180,7 @@
 		height: calc(100vh - 64px);
 		padding: 24px 0 16px;
 		background-color: $menu-bg;
-		overflow: hidden;
+		overflow: auto;
 		transition: width 0.7s cubic-bezier(0.37, 0.01, 0.19, 1.38),
 			flex 0.7s cubic-bezier(0.37, 0.01, 0.19, 1.38);
 

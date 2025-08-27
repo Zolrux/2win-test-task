@@ -160,7 +160,7 @@
     height: calc(100vh - 4rem);
     padding: 1.5rem 0 1rem;
     background-color: #2e2e54;
-    overflow: hidden;
+    overflow: auto;
     transition: width 0.7s cubic-bezier(0.37, 0.01, 0.19, 1.38), flex 0.7s cubic-bezier(0.37, 0.01, 0.19, 1.38);
   }
 
